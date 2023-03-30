@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulaire d'iscription">
+    <title>Formulaire</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Formulaire d'inscription
+        </h1>
+    </header>
+    <!-- http://127.0.0.1:5500/index.html?nom=Robert -->
+    <main>
+        <div class="inner-form" role="form" aria-labelledby="inscription">
+            <fieldset id="inscription">
+                    <legend>
+                        Espace membre
+                    </legend>
+                <form action="index.html" method="get"> <!--get ou post-->
+                    <label for="user-lastname">
+                        Nom
+                    </label>
+                    <input 
+                        type="text" 
+                        id="user-lastname"
+                        name="nom"
+                        autofocus
+                        placeholder="Nom"
+                        aria-required="true"
+                        required
+                    >
+                    <label for="user-name">
+                        Prénom
+                    </label>
+                    <input 
+                        type="text" 
+                        id="user-name"
+                        name="prenom"
+                        placeholder="Prénom"
+                        aria-required="true"
+                        required
+                    >
+                    <label for="date">
+                       Date de naissance
+                    </label>
+                    <input type="date" name="date_naissance" id="date" aria-required="true" required>
+                    <label for="mail">
+                        Votre mail
+                    </label>
+                    <input type="email" name="mail" id="mail" placeholder="e-mail" aria-required="true" required>
+
+                    <label for="phone">Téléphone</label>
+                    <input type="tel" id="phone" name="tel" placeholder="Téléphone" aria-required="true" required>
+
+                    <input type="checkbox" name="conditions" id="conditions" value="yes" aria-required="true" required>
+                    <label for="conditions" class="condition">Condition générale de vente</label>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </fieldset>
+
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy; - MIT - 2023
+        </p>
+    </footer>
+</body>
+</html>
